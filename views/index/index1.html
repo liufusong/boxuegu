@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet/less" href="./assets/less/index.less">
+	<link rel="stylesheet" href="./assets/lib/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="./assets/lib/font-awesome/css/font-awesome.css">
+</head>
+<body>
+	<!-- 左边的侧边栏 -->
+	<div class="aside">
+		<!-- 左上部分的用户信息 -->
+		<div class="profile">
+			<div class="avatar">
+				<img src="./uploader/1.jpg" class="img-circle">
+			</div>		
+			<h4>前端学院</h4>
+
+		</div>
+		<!-- 左下部分的导航 -->
+		<div class="menu">
+			<ul>
+				<li><a href="javascript:;">
+					<span class="fa fa-dashboard"></span>
+					仪表盘
+					</a></li>
+				<li><a href="javascript:;">
+					<span class="fa fa-mortar-board"></span>
+					讲师管理
+					</a></li>
+				<li><a href="javascript:;">
+					<span class="fa fa-indent"></span>
+					分类管理
+					</a></li>
+				<li>
+					<a href="javascript:;">
+					<span class="fa fa-th"></span>
+					课程管理
+					<span class="arrow fa fa-angle-right pull-right"></span>
+					</a>
+					<ul class="hide">
+						<li><a href="javascript:;">课程添加</a></li>
+						<li><a href="javascript:;">课程列表</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+	<!-- 右边的主体部分 -->
+	<div class="main">
+		<!-- 右边上部分工具部分 -->
+		<div class="header">
+			
+			<!-- 导航条 -->
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <a class="navbar-brand" href="#"><span class="fa fa-navicon"></span></a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><a href="#"><span class="fa fa-user"></span>个人中心</a></li>
+			        <li><a href="#"><span class="fa fa-sign-out"></span>退出</a></li>
+			        <li><a href="#"><span class="fa fa-tasks"></span></a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+
+
+
+
+		</div>
+		<!-- 右边下部分, 网站的主体页面 -->
+		<div class="body">
+			<!-- 路径导航 -->
+			<ol class="breadcrumb">
+			  <li><a href="#">讲师管理</a></li>
+			  <li>讲师列表</li>
+			</ol>
+
+			<!-- 面板, 添加讲师 -->
+			<div class="panel panel-default">
+			  <div class="panel-body">
+			    <button class="btn btn-success btn-sm pull-right" >添加讲师</button>
+			  </div>
+			</div>
+
+			<!-- 面板, 搜索框与讲师数据表格 -->
+			<div class="panel panel-default">
+			  <div class="panel-body">
+				<div class="col-lg-3">
+					<div class="input-group input-group-sm">
+					  <input type="text" class="form-control">
+					  <span class="input-group-btn">
+					    <button class="btn btn-success" type="button">搜索</button>
+					  </span>
+					</div><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+			  </div>
+			  <table class="table table-bordered">
+			  	<thead>
+			  		<th>编号</th>
+			  		<th>姓名</th>
+			  		<th>昵称</th>
+			  		<th>性别</th>
+			  		<th>手机号码</th>
+			  		<th>出生年月</th>
+			  		<th>邮箱</th>
+			  		<th>入职日期</th>
+			  		<th>操作</th>
+			  	</thead>
+			  	<tbody>
+			  		<tr>
+			  			<td>1</td>
+			  			<td>张三</td>
+			  			<td>超人</td>
+			  			<td>男</td>
+			  			<td>12345678909</td>
+			  			<td>2011-1-10</td>
+			  			<td>zs@123.com</td>
+			  			<td>2012-2-23</td>
+			  			<td>
+			  				<a href="javascript:void(0);" class="btn btn-info btn-xs">查看</a>
+			  				<a href="javascript:void(0);" class="btn btn-info btn-xs">编辑</a>
+			  				<a href="javascript:void(0);" class="btn btn-warning btn-xs">注销</a>
+			  			</td>
+			  		</tr>
+			  		<tr>
+			  			<td>1</td>
+			  			<td>张三</td>
+			  			<td>超人</td>
+			  			<td>男</td>
+			  			<td>12345678909</td>
+			  			<td>2011-1-10</td>
+			  			<td>zs@123.com</td>
+			  			<td>2012-2-23</td>
+			  			<td>
+			  				<a href="javascript:void(0);" class="btn btn-info btn-xs">查看</a>
+			  				<a href="javascript:void(0);" class="btn btn-info btn-xs">编辑</a>
+			  				<a href="javascript:void(0);" class="btn btn-warning btn-xs">注销</a>
+			  			</td>
+			  		</tr>
+			  		<tr>
+			  			<td>1</td>
+			  			<td>张三</td>
+			  			<td>超人</td>
+			  			<td>男</td>
+			  			<td>12345678909</td>
+			  			<td>2011-1-10</td>
+			  			<td>zs@123.com</td>
+			  			<td>2012-2-23</td>
+			  			<td>
+			  				<a href="javascript:void(0);" class="btn btn-info btn-xs">查看</a>
+			  				<a href="javascript:void(0);" class="btn btn-info btn-xs">编辑</a>
+			  				<a href="javascript:void(0);" class="btn btn-warning btn-xs">注销</a>
+			  			</td>
+			  		</tr>
+			  		<tr>
+			  			<td>1</td>
+			  			<td>张三</td>
+			  			<td>超人</td>
+			  			<td>男</td>
+			  			<td>12345678909</td>
+			  			<td>2011-1-10</td>
+			  			<td>zs@123.com</td>
+			  			<td>2012-2-23</td>
+			  			<td>
+			  				<a href="javascript:void(0);" class="btn btn-info btn-xs">查看</a>
+			  				<a href="javascript:void(0);" class="btn btn-info btn-xs">编辑</a>
+			  				<a href="javascript:void(0);" class="btn btn-warning btn-xs">注销</a>
+			  			</td>
+			  		</tr>
+			  		<tr>
+			  			<td>1</td>
+			  			<td>张三</td>
+			  			<td>超人</td>
+			  			<td>男</td>
+			  			<td>12345678909</td>
+			  			<td>2011-1-10</td>
+			  			<td>zs@123.com</td>
+			  			<td>2012-2-23</td>
+			  			<td>
+			  				<a href="javascript:void(0);" class="btn btn-info btn-xs">查看</a>
+			  				<a href="javascript:void(0);" class="btn btn-info btn-xs">编辑</a>
+			  				<a href="javascript:void(0);" class="btn btn-warning btn-xs">注销</a>
+			  			</td>
+			  		</tr>
+			  	</tbody>
+			  </table>
+
+
+
+			</div>
+			
+
+		</div>
+	</div>
+	<script src="./assets/lib/less.js/less.js"></script>
+</body>
+</html>

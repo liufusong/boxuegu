@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button>发送请求</button>
+</body>
+<script>
+	var btn = document.getElementsByTagName( 'button' )[ 0 ];
+	btn.onclick = function () {
+		var xhr = new XMLHttpRequest;
+		xhr.open( 'GET', '/api/login?tc_name=前端学院&tc_pass=123456' );
+		xhr.send();
+		xhr.onreadystatechange = function () {
+			if ( xhr.readystate == 4 && xhr.status == 200 ) {
+				console.log( xhr.responseText );
+			}
+ 		}
+
+
+	};
+</script>
+</html>
